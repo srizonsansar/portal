@@ -1,0 +1,24 @@
+.button-1{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 50px 0 0 50px;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: width $time-fast, height $time-fast;
+    &.blue{
+        background-color: $color-blue-light;
+    }
+    &.size{
+        height: 50px;
+        width: 240px;
+    }
+    &:hover{
+        @include responsive('lg'){
+            background-color: $color-orange;
+        }
+    }
+}
