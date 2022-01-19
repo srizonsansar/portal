@@ -1,0 +1,23 @@
+.requestAct{
+    &--title{
+        font-size: 15px;
+        color: $color-black4;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid $color-grey-light2;
+    }
+    &__list{
+        &--link{
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            border-bottom: 1px solid $color-grey-light2;
+            transition: background-color $time-fast;
+            &:hover{
+                @include responsive('xl'){
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+}

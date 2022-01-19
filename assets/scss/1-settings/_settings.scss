@@ -2,8 +2,8 @@ body{
     font-family: $font-regular;
     margin: 0;
     padding: 0;
-    font-size: 15px;
-    background-color: bisque;
+    font-size: 14px;
+    background-color: $color-light
 }
 ul, li, ol, dl, dt, dd, form, p, img, video a, h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -27,7 +27,7 @@ button:focus, video:focus, input:focus, textarea:focus, select:focus, select:foc
     touch-action: manipulation;
 }
 ::selection{
-    background-color: $color-black; 
+    background-color: $color-red; 
     color: $color-white;
 }
 :focus{
@@ -42,6 +42,9 @@ a, label, span, ul, input, textarea, button, div, li, ol, p{
 }
 button{
     cursor: pointer;
+}
+svg, img{
+    display: block;
 }
 input, select, textarea, button{
     font-family: $font-regular;

@@ -11,4 +11,9 @@
 
 // Shared
 
-// Home
+// Dashboard
+@import 'dashboard/dashboard';
+@import 'dashboard/moreNav';
+
+// Payment
+@import 'payment/request-activity';

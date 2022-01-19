@@ -1,0 +1,87 @@
+// More Nav
+.moreNav{
+    position: fixed;
+    top: 200px;
+    left: -270px;
+    padding: 5px;
+    width: 250px;
+    background-color: $color-white;
+    box-shadow: 0 0 10px transparentize($color-black, .85);
+    border-radius: 5px;
+    transition: left $time-fast;
+    &.active{
+        left: 120px;
+    }
+    &--close{
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        background-color: $color-black2;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: background-color $time-fast;
+        .iconSVG{
+            width: 16px;
+            height: 16px;
+            fill: $color-white;
+            transition: transform $time-fast;
+        }
+        &:hover{
+            @include responsive('lg'){
+                background-color: $color-red;
+            }
+            .iconSVG{
+                @include responsive('lg'){
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    &__list{
+        &--item{
+            &:nth-child(2n+2){
+                .moreNav{
+                    &__list{
+                        &--link{
+                            background-color: $color-light;
+                            &:hover{
+                                @include responsive('xl'){
+                                    background-color: $color-red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--link{
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            color: $color-black2;
+            transition: background-color $time-fast, color $time-fast;
+            .iconSVG{
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                transition: fill $time-fast;
+            }
+            &:hover{
+                @include responsive('xl'){
+                    background-color: $color-red;
+                    color: $color-white
+                }
+                .iconSVG{
+                    @include responsive('lg'){
+                        fill: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
-// Importing Files
-import TestAlert from './test.js'
+// Dashboard Files
+import MoreMenu from './dashboard/more-menu.js'
 
 // Importing Functions
-new TestAlert()
+new MoreMenu()
