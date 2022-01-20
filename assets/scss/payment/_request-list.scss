@@ -1,0 +1,150 @@
+.payReqList{
+    &--item{
+        background-color: $color-white;
+        padding: 8px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px transparentize($color-black, .85);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &.draft{
+            .payReqList{
+                &--colorBar{
+                    background-color: $color-black4;
+                }
+                &__dropDown{
+                    &--selected{
+                        .color{
+                            background-color: $color-black4;
+                        }
+                    }
+                }
+            }
+        }
+        &.submitted, &.viewed{
+            .payReqList{
+                &--colorBar{
+                    background-color: $color-yellow;
+                }
+                &__dropDown{
+                    &--selected{
+                        .color{
+                            background-color: $color-yellow;
+                        }
+                    }
+                }
+            }
+        }
+        &.paid{
+            .payReqList{
+                &--colorBar{
+                    background-color: $color-green;
+                }
+                &__dropDown{
+                    &--selected{
+                        .color{
+                            background-color: $color-green;
+                        }
+                    }
+                }
+            }
+        }
+        &.declined{
+            .payReqList{
+                &--colorBar{
+                    background-color: $color-red;
+                }
+                &__dropDown{
+                    &--selected{
+                        .color{
+                            background-color: $color-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &--colorBar{
+        width: 4px;
+        height: 80px;
+        border-radius: 3px;
+        margin-right: 30px;
+    }
+    &__details{
+        width: calc(100% - 539px);
+        display: flex;
+        flex-direction: column;
+        .boldBlock{
+            font-weight: $fw-bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 3px;
+            &--dot{
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $color-black;
+                margin: 0 15px;
+            }
+        }
+        .lightBlock{
+            display: flex;
+            align-items: center;
+            &--dot{
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: $color-black;
+                margin: 0 10px;
+            }
+        }
+    }
+    &--statusDate{
+        font-size: 13px;
+        color: $color-grey-dark;
+        text-align: right;
+        min-width: 250px;
+        padding-right: 50px;
+    }
+    &__dropDown{
+        width: 200px;
+        margin-right: 20px;
+        &--selected{
+            border-radius: 999px;
+            border: 1px solid $color-grey-dark2;
+            padding: 8px 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .color{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 12px;
+            }
+            .text{
+                font-size: 13px;
+            }
+        }
+        &__list{
+            display: none;
+        }
+    }
+    &--dots{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        width: 35px;
+        cursor: pointer;
+        .dot{
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $color-grey-light2;
+            margin: 1px 0;
+        }
+    }
+}
