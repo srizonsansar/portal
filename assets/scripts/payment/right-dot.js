@@ -15,7 +15,6 @@ export default class DotDotName{
             var charCount = textToCount.length
             if(charCount >= 25){
                 var limitedText = textToCount.slice(0, 25)
-                console.log(limitedText)
                 var textToCount = $(this).find('a .status .color').text(limitedText + '...')
             }
         })

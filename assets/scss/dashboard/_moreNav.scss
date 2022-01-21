@@ -58,7 +58,7 @@
             transition: background-color $time-fast, color $time-fast;
             &:hover{
                 @include responsive('xl'){
-                    background-color: $color-grey-light2;
+                    background-color: $color-light;
                 }
             }
         }
