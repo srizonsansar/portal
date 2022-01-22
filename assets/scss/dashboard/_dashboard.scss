@@ -30,7 +30,7 @@
             &--img{
                 display: block;
                 width: 70px;
-                padding: 30px 0;
+                padding: 20px 0;
             }
         }
         &__list{
@@ -58,7 +58,7 @@
                 transition: background-color $time-fast;
                 padding: 10px 0;
                 cursor: pointer;
-                min-height: 85px;
+                min-height: 90px;
                 .iconSVG{
                     width: 28px;
                     height: 28px;
@@ -104,7 +104,7 @@
     &__mid{
         width: calc(100% - 120px - 300px); // 120px of left margin, 300px of right div
         margin-left: 120px;
-        padding: 20px 0 0 20px;
+        padding-top: 20px;
     }
     // Right Section
     &__right{

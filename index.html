@@ -56,6 +56,9 @@
                 <rect x="13.49" y="11.24" width="22.44" height="2.73" transform="translate(-6.73 15.25) rotate(-32.5)"></rect>
                 <rect x="20.11" y="24.32" width="2.73" height="24.11"></rect>
             </symbol>
+            <symbol id="icon-search" viewBox="0 0 50 50">
+                <path d="M48.78,42.89,38.2,32.31a20.89,20.89,0,1,0-5.89,5.89L42.89,48.78a4.16,4.16,0,0,0,5.89-5.89ZM6.25,20.83A14.59,14.59,0,1,1,20.83,35.42,14.6,14.6,0,0,1,6.25,20.83Z" transform="translate(0 0)"></path>
+            </symbol>
         </svg>
 
         <div class="dashboard">
@@ -119,6 +122,47 @@
                 </div>
             </div>
             <div class="dashboard__mid">
+                <div class="dashboardHeader">
+                    <div class="dashboardHeader__topRow">
+                        <div class="dashboardHeader__topRow--left">
+                            <h2 class="dashboardHeader--title">Payment Requests</h2>
+                            <ul class="dashboardHeader__menu">
+                                <li class="dashboardHeader__menu--item active">
+                                    <a href="#" class="dashboardHeader__menu--link">All</a>
+                                </li>
+                                <li class="dashboardHeader__menu--item">
+                                    <a href="#" class="dashboardHeader__menu--link">Outstanding</a>
+                                </li>
+                                <li class="dashboardHeader__menu--item">
+                                    <a href="#" class="dashboardHeader__menu--link">Paid</a>
+                                </li>
+                                <li class="dashboardHeader__menu--item hasSub">
+                                    <span href="#" class="dashboardHeader__menu--link">More</span>
+                                    <div class="dashboardHeader__subMenu">
+                                        <a class="dashboardHeader__subMenu--link mainLink" href="#">Archived</a>
+                                        <a class="dashboardHeader__subMenu--link" href="#">Received Payments</a>
+                                        <a class="dashboardHeader__subMenu--link" href="#">Stripe Funding</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dashboardHeader__topRow--right">
+                            <div class="dashboardHeader__search">
+                                <form class="dashboardHeader__search__form">
+                                    <label for="searchField">
+                                        <svg class="iconSVG">
+                                            <use xlink:href="#icon-search"></use>
+                                        </svg>
+                                        <input type="text" id="searchField" placeholder="Search Payment Requests" class="dashboardHeader__search__form--input">
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboardHeader__bottomRow">
+                        aaa
+                    </div>
+                </div>
                 <ul class="payReqList">
                     <li class="payReqList--item draft">
                         <div class="payReqList--colorBar"></div>
