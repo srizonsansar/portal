@@ -1,4 +1,4 @@
-export default class statusDropDown{
+export default class StatusDropDown{
 
     constructor(){
         

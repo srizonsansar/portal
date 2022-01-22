@@ -58,3 +58,9 @@ input, textarea {
         font-size: 14px;
     }
 }
+
+body{
+    &.OFHidden{
+        overflow: hidden;
+    }
+}

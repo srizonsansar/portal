@@ -39,11 +39,11 @@
             transition: transform $time-fast;
         }
         &:hover{
-            @include responsive('lg'){
+            @include responsive('xl'){
                 background-color: $color-red;
             }
             .iconSVG{
-                @include responsive('lg'){
+                @include responsive('xl'){
                     transform: rotate(90deg);
                 }
             }

@@ -157,6 +157,10 @@
                                     </label>
                                 </form>
                             </div>
+                            <div class="dashboardHeader__openNewForm">
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="dashboardHeader__bottomRow">
@@ -700,6 +704,53 @@
                     <a class="moreNav__list--link" href="#">More Menu Ten</a>
                 </li>
             </ul>
+        </div>
+
+        <!-- Popup Form -->
+        <div class="popupShade-overlay"></div>
+        <div class="createRecord createRecord-popup-form">
+            <div class="createRecord--inner">
+                <div class="createRecord--close">
+                    <svg class="iconSVG">
+                        <use xlink:href="#icon-cross"></use>
+                    </svg>
+                </div>
+                <form class="form" action="">
+                    <div class="form__block">
+                        <label for="full-name">Full Name</label>
+                        <input class="form__block--text" type="text" name="full-name" id="full-name" />
+                    </div>
+                    <div class="form__block">
+                        <label for="message">Message</label>
+                        <textarea class="form__block--textarea" name="message" id="message"></textarea>
+                    </div>
+                    <div class="form__radio">
+                        <div class="form__radio--title">Select Gender</div>
+                        <div class="form__radio--item">
+                            <input type="radio" name="gender" id="male" value="Male" />
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="form__radio--item last">
+                            <input type="radio" name="gender" id="female" value="Female" />
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form__checkbox">
+                        <div class="form__checkbox--title">Newsletter, Offer and Promotions</div>
+                        <div class="form__checkbox--item">
+                            <input type="checkbox" name="newsletter" id="newsletter" value="newsletter" />
+                            <label for="newsletter">Newsletter</label>
+                        </div>
+                        <div class="form__checkbox--item">
+                            <input type="checkbox" name="offers" id="offers" value="offers" />
+                            <label for="offers">Offers</label>
+                        </div>
+                    </div>
+                    <div class="form__submit">
+                        <button type="submit" class="form__submit--btn">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
     <!-- Scripts -->

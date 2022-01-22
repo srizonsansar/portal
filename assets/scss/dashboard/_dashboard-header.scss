@@ -6,6 +6,10 @@
         &--left{
             padding-left: 20px;
         }
+        &--right{
+            display: flex;
+            align-self: flex-start;
+        }
     }
     &--title{
         font-size: 24px;
@@ -159,6 +163,36 @@
                     font-size: 15px;
                 }
             }
+        }
+    }
+    &__openNewForm{
+        position: relative;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $color-black4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color $time-fast;
+        &:hover{
+            @include responsive('xl'){
+                background-color: $color-black3;
+            }
+        }
+        .line1{
+            width: 20px;
+            height: 2px;
+            background-color: $color-white;
+        }
+        .line2{
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(50% - 1px);
+            width: 2px;
+            height: 20px;
+            background-color: $color-white;
         }
     }
 }

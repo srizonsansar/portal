@@ -193,7 +193,7 @@
                 display: flex;
                 align-items: center;
                 &:hover{
-                    @include responsive('lg'){
+                    @include responsive('xl'){
                         background-color: $color-light;
                         cursor: pointer;
                     }
@@ -280,7 +280,7 @@
                 color: $color-black2;
                 transition: background-color $time-fast;
                 &:hover{
-                    @include responsive('lg'){
+                    @include responsive('xl'){
                         background-color: $color-light;
                     }
                 }
