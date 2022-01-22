@@ -1,5 +1,11 @@
-// Importing Files
-import TestAlert from './test.js'
+// Dashboard Files
+import MoreMenu from './dashboard/more-menu.js'
+import DotDotName from './payment/right-dot.js'
+import StatusDropDown from './payment/payment-status-dropdown.js'
+import PopupForm from './payment/popup-form.js'
 
 // Importing Functions
-new TestAlert()
+new MoreMenu()
+new DotDotName()
+new StatusDropDown()
+new PopupForm()

@@ -1,0 +1,66 @@
+// More Nav
+.moreNav{
+    position: fixed;
+    top: 200px;
+    left: -280px;
+    width: 250px;
+    background-color: $color-white;
+    box-shadow: 0 0 10px transparentize($color-black, .85);
+    border-radius: 5px;
+    border: 1px solid $color-grey-light2;
+    transition: left $time-fast;
+    overflow: hidden;
+    &.active{
+        left: 130px;
+    }
+    &--title{
+        font-weight: $fw-medium;
+        font-size: 15px;
+        padding: 10px 15px;
+        border-bottom: 1px solid $color-grey-light2;
+    }
+    &--close{
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        background-color: $color-black2;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: background-color $time-fast;
+        .iconSVG{
+            width: 10px;
+            height: 10px;
+            fill: $color-white;
+            transition: transform $time-fast;
+        }
+        &:hover{
+            @include responsive('xl'){
+                background-color: $color-red;
+            }
+            .iconSVG{
+                @include responsive('xl'){
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    &__list{
+        padding: 8px 0;
+        &--link{
+            display: flex;
+            padding: 10px 15px;
+            color: $color-black2;
+            transition: background-color $time-fast, color $time-fast;
+            &:hover{
+                @include responsive('xl'){
+                    background-color: $color-light;
+                }
+            }
+        }
+    }
+}

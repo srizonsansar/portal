@@ -1,0 +1,47 @@
+.requestAct{
+    &--title{
+        font-size: 15px;
+        color: $color-black4;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid $color-grey-light2;
+    }
+    &__list{
+        &--item{
+            border-bottom: 1px solid $color-grey-light2;
+            &:last-child{
+                border: none;
+            }
+        }
+        &--link{
+            display: flex;
+            flex-direction: column;
+            padding: 15px 10px;
+            transition: background-color $time-fast;
+            &:hover{
+                @include responsive('xl'){
+                    background-color: $color-white;
+                }
+            }
+            .firstRow{
+                padding-bottom: 10px;
+                display: flex;
+                &--clientName{
+                    color: $color-black5;
+                    margin-right: 10px;
+                }
+                &--date{
+                    font-size: 12px;
+                    color: $color-grey-dark2;
+                }
+            }
+            .status{
+                font-size: 10px;
+                color: $color-black;
+                .color{
+                    color: $color-red;
+                }
+            }
+        }
+    }
+}
